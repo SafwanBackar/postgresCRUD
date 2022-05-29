@@ -1,5 +1,5 @@
 const express = require('express')
-const bodyParser = require('body-parser')
+
 const app = express();
 const pool = require('./pool');
 const res = require('express/lib/response');
