@@ -16,7 +16,7 @@ app.use(express.json())
 
 // READ
 
-app.get('/',(req,res)=>{
+app.get('/readBlog',(req,res)=>{
     pool.query(`SELECT * FROM blog`, [] , (err, result) =>{
         if(err) throw err
         res.json(result.rows)
